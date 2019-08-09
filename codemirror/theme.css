@@ -1,0 +1,40 @@
+/* Based on Discord's Lua highlight */
+
+.cm-s-discord.CodeMirror {
+	background: #2F3136;
+  border-radius: 10px 0px 0px 10px;
+	color: #F8F8F2;
+  font-family: "Consolas";
+}
+
+.cm-s-discord div.CodeMirror-selected {
+  background: rgba(136, 192, 206, .4);
+}
+
+.cm-s-discord .CodeMirror-gutters {
+  background: #7289DA;
+  border-right: 0px;
+}
+.cm-s-discord .CodeMirror-linenumber {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.cm-s-discord .CodeMirror-cursor {
+  border-left: 1px solid #F8F8F0;
+}
+
+.cm-s-discord span.cm-comment {
+  color: #839496;
+}
+.cm-s-discord span.cm-number, .cm-s-discord span.cm-string {
+  color: #37CECE;
+}
+.cm-s-discord span.cm-keyword {
+  color: #BABD2F;
+}
+.cm-s-discord span.cm-builtin {
+  color: #E26051;
+}
+.cm-s-discord span.cm-variable {
+  color: #71B6F7;
+}
