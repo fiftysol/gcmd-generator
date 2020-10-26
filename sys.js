@@ -14,6 +14,7 @@ function ignoreEmptyString(str){
 function results(){
 	var locale = document.getElementById("locale").value;
 	var auth = document.getElementById("auth").value;
+	var dm = document.getElementById("dm").value;
 
 	var cmd = ignoreEmptyString(document.getElementById("cmd").value.trim());
 	var value = ignoreEmptyString(document.getElementById("value").value.trim());
@@ -28,7 +29,7 @@ function results(){
 
 	if (!failed)
 	{
-		result.value = "!gcmd " + locale + " " + auth + " " + cmd;
+		result.value = "!gcmd " + locale + " " + auth + " " + dm + " " + cmd;
 		var len = result.value.length;
 	
 		if (code && code.length > 3)

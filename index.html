@@ -34,27 +34,36 @@
 			</select>
 		</div>
 		<div class="container">
-			<label class="title">3 - Command name</label>
+			<label class="title">3 - Private Message Authorization</label>
+			<label class="description">Choose if your command should be able to run in private messages.</label>
+			<br>
+			<select id="dm" oninput="results();">
+				<option value="0">Only in the server</option>
+				<option value="1">In the server and in private messages</option>
+			</select>
+		</div>
+		<div class="container">
+			<label class="title">4 - Command name</label>
 			<label class="description">Must start with a letter. Only accepts letters, numbers, _ and -. ; <sub>pattern: %a[%w_-]+</sub></label>
 			<textarea id="cmd" oninput="checkPattern(this);" placeholder="Ex: boom" maxlength="20" required></textarea>
 		</div>
 		<div class="container">
-			<label class="title">4 - Text</label>
+			<label class="title">5 - Text</label>
 			<label class="description">The text to be displayed in the embed.</label>
 			<textarea id="value" oninput="results();"></textarea>
 		</div>
 		<div class="container">
-			<label class="title">5 - Title</label>
+			<label class="title">6 - Title</label>
 			<label class="description">The title to be displayed in the embed.</label>
 			<textarea id="title" oninput="results();"></textarea>
 		</div>
 		<div class="container">
-			<label class="title">6 - Description</label>
+			<label class="title">7 - Description</label>
 			<label class="description">The command description to be displayed in <strong>!ghelp</strong>.</label>
 			<textarea id="description" oninput="results();" placeholder="Ex: displays a bomb image"></textarea>
 		</div>
 		<div class="container">
-			<label class="title">7 - Lua Script</label>
+			<label class="title">8 - Lua Script</label>
 			<label class="description">The script that will be executed. Don't forget that the variable <strong>parameters</strong> includes the content next to the command.</label>
 			<br>
 			<textarea id="code"></textarea>
